@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Copy Div Value to Input</title>
+</head>
+<body>
+  <div class="gencontrol">This is the value to be copied.</div>
+  <input type="text" id="get_value">
+  <button onclick="copyValue()">Copy</button>
+
+  <script>
+    function copyValue() {
+      var sourceDiv = document.querySelector(".gencontrol").innerHTML;
+      var targetInput = document.getElementById("get_value");
+
+      targetInput.value = sourceDiv;
+    }
+  </script>
+</body>
+</html>
